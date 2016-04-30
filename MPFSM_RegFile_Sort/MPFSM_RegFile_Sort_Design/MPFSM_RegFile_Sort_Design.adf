@@ -51,8 +51,10 @@ UCF=
 [Files]
 /Reg.vhd=-1
 /RegFile.vhd=-1
+/ROM.vhd=-1
 
 [Files.Data]
 .\src\Reg.vhd=VHDL Source Code
 .\src\RegFile.vhd=VHDL Source Code
+.\src\ROM.vhd=VHDL Source Code
 
