@@ -1,0 +1,10 @@
+/log
+/compile
+*.mgf
+*.ini
+*.set
+*.lib
+*.adf
+*.order
+*.cgf
+*.wsp
