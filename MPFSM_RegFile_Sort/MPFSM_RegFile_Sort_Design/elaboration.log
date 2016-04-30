@@ -1,4 +1,4 @@
-Active-HDL 9.1.2353.4205  2016-04-30 20:05:27
+Active-HDL 9.1.2353.4205  2016-04-30 20:44:57
 
 Elaboration top modules:
 Architecture                  beh_regn(REGn)
@@ -7,7 +7,7 @@ Architecture                  beh_regn(REGn)
 ------------------------------------------------------------------------------------------------------------
 Entity   | Architecture | Library                   | Info | Compiler Version         | Compilation Options
 ------------------------------------------------------------------------------------------------------------
-REGn     | beh_regn     | MPFSM_RegFile_Sort_Design |      | 9.1.2353.4205  (Windows) | -O3
+REGn     | beh_regn     | mpfsm_regfile_sort_design |      | 9.1.2353.4205  (Windows) | -O3
 ------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------
@@ -22,10 +22,6 @@ std_logic_1164          | ieee                      |      | 9.1.2353.4205  (Win
 Library                   | Comment
 --------------------------------------------------------------------------------------------------------------
 ieee                      | Standard IEEE packages library
-MPFSM_RegFile_Sort_Design | None
+mpfsm_regfile_sort_design | None
 std                       | Standard VHDL library
 --------------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+REGn REGn beh_regn
-
