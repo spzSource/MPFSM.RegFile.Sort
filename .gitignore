@@ -4,6 +4,7 @@
 *.ini
 *.set
 *.lib
+*.adf
 *.order
 *.cgf
 *.wsp

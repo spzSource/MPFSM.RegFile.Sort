@@ -1,0 +1,7 @@
+138
+~E 1 "./src/ROM.vhd" 8 MicroROM
+~A 1 "./src/ROM.vhd" 16 MicroROM_Behaviour
+~E 1 "./src/RegFile.vhd" 5 REGFile
+~A 1 "./src/RegFile.vhd" 19 beh_regfile
+~E 1 "./src/Reg.vhd" 4 REGn
+~A 1 "./src/Reg.vhd" 16 beh_regn
