@@ -1,0 +1,299 @@
+# Design: Design MPFSM_RegFile_Sort_Design already active.
+# 
+# DESIGN: Default Design Language: VHDL
+# DESIGN: Default BDE Language: VHDL
+# DESIGN: C-Synthesis: Not Defined
+# DESIGN: HDL Synthesis: Not Defined
+# DESIGN: Physical Synthesis: Not Defined
+# DESIGN: Implementation: Not Defined
+acom -reorder -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Top-level unit(s) detected:
+# Entity => REGFile
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+REGFile REGFile beh_regfile
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6013 kB (elbread=1023 elab2=4898 kernel=91 sdf=0)
+# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
+#  18:45, Saturday, April 30, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: REGFile (beh_regfile)
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+REGn REGn beh_regn
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5751 kB (elbread=1023 elab2=4636 kernel=90 sdf=0)
+# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
+#  18:45, Saturday, April 30, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: REGn (beh_regn)
+# 7 signal(s) traced.
+# wave -rec *
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Error: COMP96_0078: Reg.vhd : (8, 41): Unknown identifier "INITREG".
+# Error: COMP96_0133: Reg.vhd : (8, 41): Cannot find object declaration.
+# Error: COMP96_0124: Reg.vhd : (8, 48): Illegal prefix for attribute 'range.
+# Error: COMP96_0064: Reg.vhd : (8, 24): Unknown type.
+# Error: COMP96_0078: Reg.vhd : (13, 41): Unknown identifier "INITREG".
+# Error: COMP96_0133: Reg.vhd : (13, 41): Cannot find object declaration.
+# Error: COMP96_0124: Reg.vhd : (13, 48): Illegal prefix for attribute 'range.
+# Error: COMP96_0064: Reg.vhd : (13, 24): Unknown type.
+# Compile Architecture "beh_regn" of Entity "REGn"
+# Error: COMP96_0078: Reg.vhd : (19, 17): Unknown identifier "data_input".
+# Error: COMP96_0078: Reg.vhd : (19, 29): Unknown identifier "enabled".
+# Error: COMP96_0348: Reg.vhd : (19, 17): Name on sensitivity list must denote a signal.
+# Error: COMP96_0348: Reg.vhd : (19, 29): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: Reg.vhd : (22, 11): Unknown identifier "INITIAL".
+# Error: COMP96_0133: Reg.vhd : (22, 11): Cannot find object declaration.
+# Error: COMP96_0077: Reg.vhd : (22, 11): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Reg.vhd : (23, 9): Unknown identifier "enabled".
+# Error: COMP96_0133: Reg.vhd : (23, 9): Cannot find object declaration.
+# Error: COMP96_0077: Reg.vhd : (23, 9): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: Reg.vhd : (25, 12): Unknown identifier "data_input".
+# Error: COMP96_0133: Reg.vhd : (25, 12): Cannot find object declaration.
+# Error: COMP96_0077: Reg.vhd : (25, 12): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Reg.vhd : (29, 2): Unknown identifier "data_output".
+# Error: COMP96_0133: Reg.vhd : (29, 2): Cannot find object declaration.
+# Error: COMP96_0078: Reg.vhd : (29, 26): Unknown identifier "output_enabled".
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (57, 0): There is no default binding for component "REGn". (Generic "INITIAL_T" is not on the entity).
+# Compile failure 24 Errors 1 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (57, 0): There is no default binding for component "REGn". (Generic "INITIAL_T" is not on the entity).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -reorder -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# Top-level unit(s) detected:
+# Entity => REGFile
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (57, 0): There is no default binding for component "REGn". (Generic "INITIAL_T" is not on the entity).
+# Error: COMP96_0078: RegFile.vhd : (57, 27): Unknown identifier "INITIAL_T".
+# Error: COMP96_0133: RegFile.vhd : (57, 27): Cannot find object declaration.
+# Error: COMP96_0104: RegFile.vhd : (57, 27): Undefined type of expression.
+# Compile failure 3 Errors 1 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (57, 0): There is no default binding for component "REGn". (Generic "INITIAL_T" is not on the entity).
+# Error: COMP96_0078: RegFile.vhd : (57, 27): Unknown identifier "INITIAL_T".
+# Error: COMP96_0133: RegFile.vhd : (57, 27): Cannot find object declaration.
+# Error: COMP96_0104: RegFile.vhd : (57, 27): Undefined type of expression.
+# Compile failure 3 Errors 1 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (57, 0): There is no default binding for component "REGn". (Generic "INITIAL_T" is not on the entity).
+# Error: COMP96_0078: RegFile.vhd : (57, 27): Unknown identifier "INITIAL_T".
+# Error: COMP96_0104: RegFile.vhd : (57, 27): Undefined type of expression.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (57, 0): There is no default binding for component "REGn". (Generic "INITREG_T" is not on the entity).
+# Error: COMP96_0078: RegFile.vhd : (57, 27): Unknown identifier "INITIAL".
+# Error: COMP96_0104: RegFile.vhd : (57, 27): Undefined type of expression.
+# Compile failure 2 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (57, 0): There is no default binding for component "REGn". (Generic "INITREG_T" is not on the entity).
+# Error: COMP96_0078: RegFile.vhd : (57, 27): Unknown identifier "INITIAL".
+# Error: COMP96_0133: RegFile.vhd : (57, 27): Cannot find object declaration.
+# Error: COMP96_0112: RegFile.vhd : (57, 27): "INITIAL" does not match the formal name.
+# Compile failure 3 Errors 1 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+REGFile REGFile beh_regfile
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6146 kB (elbread=1024 elab2=5029 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location F:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
+#  19:43, Saturday, April 30, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: REGFile (beh_regfile)
+# 121 signal(s) traced.
+# wave -rec *
+run 100 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: WRITE_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /REGFile,  Process: READ_ADDRESS_DECODER.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+#  Simulation has been stopped

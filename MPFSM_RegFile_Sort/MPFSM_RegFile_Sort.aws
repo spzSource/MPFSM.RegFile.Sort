@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+mpfsm_regfile_sort_design=.\MPFSM_RegFile_Sort_Design\MPFSM_RegFile_Sort_Design.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+mpfsm_regfile_sort_design=1
