@@ -58,3 +58,8 @@ UCF=
 .\src\RegFile.vhd=VHDL Source Code
 .\src\ROM.vhd=VHDL Source Code
 
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
