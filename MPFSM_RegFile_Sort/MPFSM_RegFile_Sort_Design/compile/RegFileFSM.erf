@@ -1,0 +1,10 @@
+MESSAGE "Loading State Diagram data..."
+MESSAGE "Generating f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\compile\RegFileFSM.vhd from f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf"
+MESSAGE "Synthesis attributes will be generated for Synopsys FPGA Express"
+FSM2VHDL_WARNING FSM2HDL_4028 "Attribute ENUM_ENCODING is not supported for Symbolic encoding." "f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf" 5
+FSM2VHDL_ERROR FSM2HDL_3007 "Missing condition. Two unconditional transitions detected." "f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf" 45
+FSM2VHDL_WARNING FSM2HDL_3027 "There is no exit from state Halt" "f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf" 31
+FSM2VHDL_ERROR FSM2HDL_3007 "Missing condition. Two unconditional transitions detected." "f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf" 48
+MESSAGE "HDL code generation completed. 2 error(s), 2 warning(s)"
+MESSAGE "Double-click on error/warning line to see the source of error/warning."
+MESSAGE "Serious errors detected during compilation. HDL file has not been generated."

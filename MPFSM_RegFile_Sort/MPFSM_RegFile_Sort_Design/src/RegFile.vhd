@@ -4,7 +4,7 @@ use ieee.std_logic_unsigned.all;
 
 entity REGFile is
 	generic(INITREG_T          : std_logic_vector := "00000000";
-		    ADDRESS_BIT_SIZE_T : integer          := 4);
+		    ADDRESS_BIT_SIZE_T : integer          := 6);
 	port(
 		init             : in  std_logic;
 		write_data_port  : in  std_logic_vector(INITREG_T'range);

@@ -2,3 +2,6 @@
 .\src\RegFile.vhd
 .\src\ROM.vhd
 .\src\Datapath.vhd
+.\src\Controller.vhd
+.\src\Commands.vhd
+.\src\MicroProcessor.vhd

@@ -53,3 +53,302 @@ asim -O5 +access +r +m+Datapath Datapath Datapath_Behavioural
 #  14:44, Sunday, May 1, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: Datapath (Datapath_Behavioural)
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFileFSM.asf
+# Compile...
+# Loading State Diagram data...
+# Generating f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\compile\RegFileFSM.vhd from f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf
+# Synthesis attributes will be generated for Synopsys FPGA Express
+# Warning: FSM2HDL_4028 RegFileFSM.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Error: FSM2HDL_3007 RegFileFSM.asf : Missing condition. Two unconditional transitions detected.
+# Warning: FSM2HDL_3027 RegFileFSM.asf : There is no exit from state Halt
+# Error: FSM2HDL_3007 RegFileFSM.asf : Missing condition. Two unconditional transitions detected.
+# HDL code generation completed. 2 error(s), 2 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
+# Serious errors detected during compilation. HDL file has not been generated.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Error: COMP96_0078: Controller.vhd : (8, 5): Unknown identifier "commands".
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0056: Controller.vhd : (43, 1): Cannot find referenced entity declaration "Controller".
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFileFSM.asf $dsn/src/Commands.vhd
+# Compile...
+# Loading State Diagram data...
+# Generating f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\compile\RegFileFSM.vhd from f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf
+# Synthesis attributes will be generated for Synopsys FPGA Express
+# Warning: FSM2HDL_4028 RegFileFSM.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Error: FSM2HDL_3007 RegFileFSM.asf : Missing condition. Two unconditional transitions detected.
+# Warning: FSM2HDL_3027 RegFileFSM.asf : There is no exit from state Halt
+# Error: FSM2HDL_3007 RegFileFSM.asf : Missing condition. Two unconditional transitions detected.
+# HDL code generation completed. 2 error(s), 2 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
+# Serious errors detected during compilation. HDL file has not been generated.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Error: COMP96_0078: Controller.vhd : (8, 5): Unknown identifier "commands".
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0056: Controller.vhd : (43, 1): Cannot find referenced entity declaration "Controller".
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# Compile failure 2 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFileFSM.asf $dsn/src/Commands.vhd
+# Compile...
+# Loading State Diagram data...
+# Generating f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\compile\RegFileFSM.vhd from f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFileFSM.asf
+# Synthesis attributes will be generated for Synopsys FPGA Express
+# Warning: FSM2HDL_4028 RegFileFSM.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Error: FSM2HDL_3007 RegFileFSM.asf : Missing condition. Two unconditional transitions detected.
+# Warning: FSM2HDL_3027 RegFileFSM.asf : There is no exit from state Halt
+# Error: FSM2HDL_3007 RegFileFSM.asf : Missing condition. Two unconditional transitions detected.
+# HDL code generation completed. 2 error(s), 2 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
+# Serious errors detected during compilation. HDL file has not been generated.
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0127: Controller.vhd : (75, 72): Improper aggregate length. Expected length is 22.
+# Error: COMP96_0079: Controller.vhd : (75, 72): Invalid aggregate.
+# Error: COMP96_0077: Controller.vhd : (75, 72): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Controller.vhd : (152, 56): Unknown identifier "datapath_sign_bit_flag".
+# Error: COMP96_0133: Controller.vhd : (152, 56): Cannot find object declaration.
+# Error: COMP96_0077: Controller.vhd : (152, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0367: Controller.vhd : (175, 19): Improper array length (22). Expected length is 16.
+# Error: COMP96_0367: Controller.vhd : (177, 19): Improper array length (22). Expected length is 16.
+# Error: COMP96_0078: Controller.vhd : (189, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (189, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (192, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (192, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (194, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (194, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (194, 20): Unknown identifier "data".
+# Error: COMP96_0078: Controller.vhd : (198, 25): Unknown identifier "data_address".
+# Error: COMP96_0078: Controller.vhd : (198, 39): Unknown identifier "data".
+# Error: COMP96_0348: Controller.vhd : (198, 25): Name on sensitivity list must denote a signal.
+# Error: COMP96_0348: Controller.vhd : (198, 39): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: Controller.vhd : (201, 4): Unknown identifier "ram_address".
+# Error: COMP96_0133: Controller.vhd : (201, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (201, 19): Unknown identifier "data_address".
+# Error: COMP96_0078: Controller.vhd : (208, 4): Unknown identifier "ram_read_write".
+# Error: COMP96_0133: Controller.vhd : (208, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (210, 4): Unknown identifier "ram_read_write".
+# Error: COMP96_0133: Controller.vhd : (210, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (217, 4): Unknown identifier "data".
+# Error: COMP96_0133: Controller.vhd : (217, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (217, 12): Unknown identifier "ram_data_output".
+# Error: COMP96_0078: Controller.vhd : (221, 2): Unknown identifier "ram_data_input".
+# Error: COMP96_0133: Controller.vhd : (221, 2): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (222, 2): Unknown identifier "datapath_operand".
+# Error: COMP96_0133: Controller.vhd : (222, 2): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (222, 29): Unknown identifier "data".
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# Compile failure 34 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Controller.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0127: Controller.vhd : (75, 72): Improper aggregate length. Expected length is 22.
+# Error: COMP96_0079: Controller.vhd : (75, 72): Invalid aggregate.
+# Error: COMP96_0077: Controller.vhd : (75, 72): Undefined type of expression. Expected type 'STD_LOGIC_VECTOR'.
+# Error: COMP96_0078: Controller.vhd : (152, 56): Unknown identifier "datapath_sign_bit_flag".
+# Error: COMP96_0133: Controller.vhd : (152, 56): Cannot find object declaration.
+# Error: COMP96_0077: Controller.vhd : (152, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0367: Controller.vhd : (175, 19): Improper array length (22). Expected length is 16.
+# Error: COMP96_0367: Controller.vhd : (177, 19): Improper array length (22). Expected length is 16.
+# Error: COMP96_0078: Controller.vhd : (189, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (189, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (192, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (192, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (194, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (194, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (194, 20): Unknown identifier "data".
+# Error: COMP96_0078: Controller.vhd : (198, 25): Unknown identifier "data_address".
+# Error: COMP96_0078: Controller.vhd : (198, 39): Unknown identifier "data".
+# Error: COMP96_0348: Controller.vhd : (198, 25): Name on sensitivity list must denote a signal.
+# Error: COMP96_0348: Controller.vhd : (198, 39): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: Controller.vhd : (201, 4): Unknown identifier "ram_address".
+# Error: COMP96_0133: Controller.vhd : (201, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (201, 19): Unknown identifier "data_address".
+# Error: COMP96_0078: Controller.vhd : (208, 4): Unknown identifier "ram_read_write".
+# Error: COMP96_0133: Controller.vhd : (208, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (210, 4): Unknown identifier "ram_read_write".
+# Error: COMP96_0133: Controller.vhd : (210, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (217, 4): Unknown identifier "data".
+# Error: COMP96_0133: Controller.vhd : (217, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (217, 12): Unknown identifier "ram_data_output".
+# Error: COMP96_0078: Controller.vhd : (221, 2): Unknown identifier "ram_data_input".
+# Error: COMP96_0133: Controller.vhd : (221, 2): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (222, 2): Unknown identifier "datapath_operand".
+# Error: COMP96_0133: Controller.vhd : (222, 2): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (222, 29): Unknown identifier "data".
+# Compile failure 34 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/Commands.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# Error: COMP96_0078: Controller.vhd : (152, 56): Unknown identifier "datapath_sign_bit_flag".
+# Error: COMP96_0133: Controller.vhd : (152, 56): Cannot find object declaration.
+# Error: COMP96_0077: Controller.vhd : (152, 10): Undefined type of expression. Expected type 'BOOLEAN'.
+# Error: COMP96_0078: Controller.vhd : (189, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (189, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (192, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (192, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (194, 4): Unknown identifier "data_address".
+# Error: COMP96_0133: Controller.vhd : (194, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (194, 20): Unknown identifier "data".
+# Error: COMP96_0078: Controller.vhd : (198, 25): Unknown identifier "data_address".
+# Error: COMP96_0078: Controller.vhd : (198, 39): Unknown identifier "data".
+# Error: COMP96_0348: Controller.vhd : (198, 25): Name on sensitivity list must denote a signal.
+# Error: COMP96_0348: Controller.vhd : (198, 39): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: Controller.vhd : (201, 4): Unknown identifier "ram_address".
+# Error: COMP96_0133: Controller.vhd : (201, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (201, 19): Unknown identifier "data_address".
+# Error: COMP96_0078: Controller.vhd : (208, 4): Unknown identifier "ram_read_write".
+# Error: COMP96_0133: Controller.vhd : (208, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (210, 4): Unknown identifier "ram_read_write".
+# Error: COMP96_0133: Controller.vhd : (210, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (217, 4): Unknown identifier "data".
+# Error: COMP96_0133: Controller.vhd : (217, 4): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (217, 12): Unknown identifier "ram_data_output".
+# Error: COMP96_0078: Controller.vhd : (221, 2): Unknown identifier "ram_data_input".
+# Error: COMP96_0133: Controller.vhd : (221, 2): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (222, 2): Unknown identifier "datapath_operand".
+# Error: COMP96_0133: Controller.vhd : (222, 2): Cannot find object declaration.
+# Error: COMP96_0078: Controller.vhd : (222, 29): Unknown identifier "data".
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# Compile failure 29 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/Commands.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+Controller Controller Controller_Behavioural
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6178 kB (elbread=1023 elab2=5062 kernel=92 sdf=0)
+# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
+#  18:38, Sunday, May 1, 2016
+#  Simulation has been initialized
+#  Selected Top-Level: Controller (Controller_Behavioural)
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/Commands.vhd $dsn/src/MicroProcessor.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller

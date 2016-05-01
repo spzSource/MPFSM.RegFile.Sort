@@ -1,61 +1,93 @@
-timestamp=1462103128351
+timestamp=1462118363972
+
+[commands]
+E=1*157478
+I=0*23989
+M=3|0|v98|1462115336769|./src/Commands.vhd|0*23473*0x10c748c686dc323ada48594c4a081eed4ceedb25|0*23912*0xab32bc1a2daf049573e14469f634e0e6
+R=./src/Commands.vhd|8
+Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+
+[controller]
+A/controller_behavioural=A/Controller_Behavioural 21|./src/Controller.vhd|43|1*228643
+BinI32/controller_behavioural=3*58947
+I=0*26500
+I/controller_behavioural=I/Controller_Behavioural 0*31113
+M=11|0|v98|1462115351874|./src/Controller.vhd|0*25252*0xfa7955d42adec7a3f8f347347df55fe516476224|0*26419*0xab32bc1a2daf049573e14469f634e0e6
+M/controller_behavioural=M/Controller_Behavioural 21|0|v98|1462118363894|./src/Controller.vhd|0*26854*0x582bf5d0adba5d6a127bdc3c68fe1ccb7cc8899b|0*31006*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/Controller.vhd|13
+Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+Version/controller_behavioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [datapath]
-A/datapath_behavioural=A/Datapath_Behavioural 21|./src/Datapath.vhd|20|1*123018
-BinI32/datapath_behavioural=3*29372
+A/datapath_behavioural=A/Datapath_Behavioural 21|./src/Datapath.vhd|20|1*224471
+BinI32/datapath_behavioural=3*57558
 I=0*15802
 I/datapath_behavioural=I/Datapath_Behavioural 0*19105
 M=11|0|v98|1462103069041|./src/Datapath.vhd|0*15217*0x7e9edf0b4b3d0e247fa04b731755ef3f365fada4|0*15725*0xab32bc1a2daf049573e14469f634e0e6
-M/datapath_behavioural=M/Datapath_Behavioural 21|0|v98|1462103128306|./src/Datapath.vhd|0*17759*0x0152ceed92b7a128582241e874af5ba29b3490a4|0*19004*0xb33770ff1c10522f9491560174ac8e6c
+M/datapath_behavioural=M/Datapath_Behavioural 21|0|v98|1462118363866|./src/Datapath.vhd|0*17759*0x0152ceed92b7a128582241e874af5ba29b3490a4|0*19004*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Datapath.vhd|8
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/datapath_behavioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
+[microprocessor]
+A/microprocessor_behavioural=A/MicroProcessor_Behavioural 21|./src/MicroProcessor.vhd|19|1*238252
+BinI32/microprocessor_behavioural=3*61717
+I=0*32322
+I/microprocessor_behavioural=I/MicroProcessor_Behavioural 0*37498
+M=11|0|v98|1462118363934|./src/MicroProcessor.vhd|0*31786*0x5d2e24956a38f430b65540a9679f6d5007bc8870|0*32233*0xab32bc1a2daf049573e14469f634e0e6
+M/microprocessor_behavioural=M/MicroProcessor_Behavioural 21|0|v98|1462118363937|./src/MicroProcessor.vhd|0*32625*0x7eb97e2d8df61c9e826d484f73a93e70309f30c6|0*37379*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/MicroProcessor.vhd|8
+Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+Version/microprocessor_behavioural=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
+
 [microrom]
-A/microrom_behaviour=A/MicroROM_Behaviour 21|./src/ROM.vhd|16|1*120819
-BinI32/microrom_behaviour=3*28888
-I=0*13592
-I/microrom_behaviour=I/MicroROM_Behaviour 0*14555
-M=11|0|v98|1462036905776|./src/ROM.vhd|0*13163*0xae0185066c6d4c7580115d89b770648e8fdcc137|0*13520*0xab32bc1a2daf049573e14469f634e0e6
-M/microrom_behaviour=M/MicroROM_Behaviour 21|0|v98|1462103128262|./src/ROM.vhd|0*13889*0x0524d24a6e4e2cd2eb39a459774ceb79cc0a7a27|0*14461*0xb33770ff1c10522f9491560174ac8e6c
+A/microrom_behaviour=A/MicroROM_Behaviour 21|./src/ROM.vhd|16|1*222258
+BinI32/microrom_behaviour=3*57074
+I=0*21831
+I/microrom_behaviour=I/MicroROM_Behaviour 0*22794
+M=11|0|v98|1462115275263|./src/ROM.vhd|0*21402*0x7d72d1b9070bfe5b387e7fec85d587e43c3a1f2e|0*21759*0xab32bc1a2daf049573e14469f634e0e6
+M/microrom_behaviour=M/MicroROM_Behaviour 21|0|v98|1462118363839|./src/ROM.vhd|0*22128*0xfea063bea7d813b6cb5792bc15c69019b77a7e26|0*22700*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/ROM.vhd|8
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/microrom_behaviour=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [regfile]
-A/beh_regfile=21|./src/RegFile.vhd|19|1*114141
-BinI32/beh_regfile=3*27334
-I=0*10244
-I/beh_regfile=0*12086
-M=11|0|v98|1462035885638|./src/RegFile.vhd|0*9475*0xa3823dbca522e1dd79a19eb1423d8d8b9e0c8b78|0*10169*0xab32bc1a2daf049573e14469f634e0e6
-M/beh_regfile=21|0|v98|1462103128215|./src/RegFile.vhd|0*10414*0x6e9fedcd750b8cc1b5c9d4e17ae44156edb941ed|0*11996*0xb33770ff1c10522f9491560174ac8e6c
+A/beh_regfile=21|./src/RegFile.vhd|19|1*215580
+BinI32/beh_regfile=3*55520
+I=0*20791
+I/beh_regfile=0*20961
+M=11|0|v98|1462115275212|./src/RegFile.vhd|0*20022*0x476b312ecf5d78eab39794600903a2feee87f7e0|0*20716*0xab32bc1a2daf049573e14469f634e0e6
+M/beh_regfile=21|0|v98|1462118363805|./src/RegFile.vhd|0*10414*0x6e9fedcd750b8cc1b5c9d4e17ae44156edb941ed|0*11996*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/RegFile.vhd|5
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/beh_regfile=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [regn]
-A/beh_regn=21|./src/Reg.vhd|16|1*112060
-BinI32/beh_regn=3*26525
+A/beh_regn=21|./src/Reg.vhd|16|1*213499
+BinI32/beh_regn=3*54711
 I=0*6865
 I/beh_regn=0*7419
 M=11|0|v98|1462034265407|./src/Reg.vhd|0*6410*0x669c9240988a759c06ed4eec72374c0d9e8cfb55|0*6797*0xab32bc1a2daf049573e14469f634e0e6
-M/beh_regn=21|0|v98|1462103128152|./src/Reg.vhd|0*6963*0x68da3405cb3f89f84706c3129fd484e0604614c0|0*7339*0xb33770ff1c10522f9491560174ac8e6c
+M/beh_regn=21|0|v98|1462118363753|./src/Reg.vhd|0*6963*0x68da3405cb3f89f84706c3129fd484e0604614c0|0*7339*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/Reg.vhd|4
 Version=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 Version/beh_regn=9.1.2353.4205  (Windows)|00000003789cd3f5370600015b00b0
 
 [~A]
-ModifyID=221
+ModifyID=391
 Version=73
 
 [~MFT]
-0=89|0MPFSM_RegFile_Sort_Design.mgf|19105|9730
-1=65|1MPFSM_RegFile_Sort_Design.mgf|123018|112060
-3=65|3MPFSM_RegFile_Sort_Design.mgf|29372|26525
+0=132|0MPFSM_RegFile_Sort_Design.mgf|37498|13417
+1=118|1MPFSM_RegFile_Sort_Design.mgf|238252|212519
+3=117|3MPFSM_RegFile_Sort_Design.mgf|61717|54711
 
 [~U]
+commands=3|0*23110|0*23245
+controller=Controller 11|0*24286|
 datapath=Datapath 11|0*14871|
-microrom=MicroROM 11|0*12955|
-regfile=REGFile 11|0*8876|
+microprocessor=MicroProcessor 11|0*31490|
+microrom=MicroROM 11|0*21194|
+regfile=REGFile 11|0*19423|
 regn=REGn 11|0*6084|
 

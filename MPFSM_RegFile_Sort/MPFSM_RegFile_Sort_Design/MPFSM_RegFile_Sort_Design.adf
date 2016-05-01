@@ -59,10 +59,16 @@ Selected=
 /RegFile.vhd=-1
 /ROM.vhd=-1
 /Datapath.vhd=-1
+/Controller.vhd=-1
+/Commands.vhd=-1
+/MicroProcessor.vhd=-1
 
 [Files.Data]
 .\src\Reg.vhd=VHDL Source Code
 .\src\RegFile.vhd=VHDL Source Code
 .\src\ROM.vhd=VHDL Source Code
 .\src\Datapath.vhd=VHDL Source Code
+.\src\Controller.vhd=VHDL Source Code
+.\src\Commands.vhd=VHDL Source Code
+.\src\MicroProcessor.vhd=VHDL Source Code
 
