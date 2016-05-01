@@ -48,18 +48,21 @@ Active_lib=
 [IMPLEMENTATION]
 UCF=
 
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=regn|beh_regn|0
+ShowHide=ShowTopLevel
+Selected=
+
 [Files]
 /Reg.vhd=-1
 /RegFile.vhd=-1
 /ROM.vhd=-1
+/Datapath.vhd=-1
 
 [Files.Data]
 .\src\Reg.vhd=VHDL Source Code
 .\src\RegFile.vhd=VHDL Source Code
 .\src\ROM.vhd=VHDL Source Code
+.\src\Datapath.vhd=VHDL Source Code
 
-[HierarchyViewer]
-SortInfo=u
-HierarchyInformation=
-ShowHide=ShowTopLevel
-Selected=

@@ -1,4 +1,6 @@
-156
+221
+~E 1 "./src/Datapath.vhd" 8 Datapath
+~A 1 "./src/Datapath.vhd" 20 Datapath_Behavioural
 ~E 1 "./src/ROM.vhd" 8 MicroROM
 ~A 1 "./src/ROM.vhd" 16 MicroROM_Behaviour
 ~E 1 "./src/RegFile.vhd" 5 REGFile
