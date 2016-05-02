@@ -1,4 +1,4 @@
-Active-HDL 9.1.2353.4205  2016-05-01 18:38:39
+Active-HDL 9.1.2353.4205  2016-05-03 02:12:37
 
 Elaboration top modules:
 Architecture                  Controller_Behavioural(Controller)
@@ -29,7 +29,3 @@ ieee                                | Standard IEEE packages library
 mpfsm_regfile_sort_design           | None
 std                                 | Standard VHDL library
 ------------------------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+Controller Controller Controller_Behavioural
-

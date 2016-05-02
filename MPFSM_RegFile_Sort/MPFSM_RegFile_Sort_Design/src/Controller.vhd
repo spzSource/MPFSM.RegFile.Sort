@@ -43,6 +43,7 @@ end entity Controller;
 architecture Controller_Behavioural of Controller is
 	type states is (
 		IDLE,
+		INIT,
 		FETCH,
 		DECODE,
 		READ,
@@ -89,10 +90,11 @@ begin
 		case current_state is
 			when IDLE =>
 				if (start = '1') then
-					next_state <= FETCH;
+					next_state <= INIT;
 				else
 					next_state <= IDLE;
 				end if;
+			when INIT  => next_state <= FETCH;
 			when FETCH => next_state <= DECODE;
 
 			when DECODE =>
@@ -133,6 +135,18 @@ begin
 			stop <= '1';
 		else
 			stop <= '0';
+		end if;
+	end process;
+	
+	--
+	-- multiplexer to initialize Reg file.
+	--
+	RAM_INITIAL : process(current_state)
+	begin
+		if (current_state = INIT) then
+			ram_init <= '1';
+		else
+			ram_init <= '0';
 		end if;
 	end process;
 

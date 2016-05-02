@@ -50,7 +50,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=regn|beh_regn|0
+HierarchyInformation=controller|Controller_Behavioural|0 datapath|Datapath_Behavioural|0 regn|beh_regn|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -71,4 +71,3 @@ Selected=
 .\src\Controller.vhd=VHDL Source Code
 .\src\Commands.vhd=VHDL Source Code
 .\src\MicroProcessor.vhd=VHDL Source Code
-
