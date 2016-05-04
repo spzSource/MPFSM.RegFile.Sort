@@ -1,2 +1,11 @@
-"y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd" VHDL MPFSM_RegFile_Sort_Design 0 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
+"f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd" VHDL mpfsm_regfile_sort_design 1 0 0 -02
 . . 0 0 0

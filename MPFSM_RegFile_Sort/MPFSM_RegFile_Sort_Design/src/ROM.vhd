@@ -10,7 +10,7 @@ use commands.all;
 entity MicroROM is
 	port(
 		read_enable : in  std_logic;
-		address     : in  std_logic_vector(5 downto 0);
+		address     : in  std_logic_vector(7 downto 0);
 		data_output : out std_logic_vector(27 downto 0)
 	);
 end MicroROM;
@@ -23,13 +23,13 @@ architecture MicroROM_Behaviour of MicroROM is
 	-- type and sub-types declarations
 	-- 
 	subtype instruction is std_logic_vector(27 downto 0);
-	type ROM_type is array (0 to 63) of instruction;
+	type ROM_type is array (0 to 255) of instruction;
 
 	--
 	-- Represents the set of instructions as read only (constant) memory.
 	--
 	constant ROM : ROM_type := (
-		MOV_OP & "00000011" & "00000000" & "00000001",
+		ADD_OP & "00000000" & "00000001" & "11111111",
 		others => (instruction'range => '0')
 	);
 

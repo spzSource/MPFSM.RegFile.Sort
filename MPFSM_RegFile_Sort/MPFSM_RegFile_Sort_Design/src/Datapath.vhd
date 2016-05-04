@@ -46,7 +46,6 @@ begin
 			case operation_code is
 				when ADD_OP    => op_result <= add_result;
 				when SUB_OP    => op_result <= sub_result;
-				when MOV_OP    => op_result <= operand_1;
 				when others => null;
 			end case;
 		end if;

@@ -4,7 +4,7 @@ use ieee.std_logic_unsigned.all;
 
 entity REGFile is
 	generic(INITREG_T          : std_logic_vector := "00000000";
-		    ADDRESS_BIT_SIZE_T : integer          := 8);
+		    ADDRESS_BIT_SIZE_T : integer          := 2);
 	port(
 		init             : in  std_logic;
 		write_data_port  : in  std_logic_vector(INITREG_T'range);
@@ -57,16 +57,16 @@ begin
 	end process;
 
 	REGi : for i in 2 ** ADDRESS_BIT_SIZE_T - 1 downto 0 generate
-		REGii : REGn generic map(INITIAL => INITREG_T)
+		REGi : REGn generic map(INITIAL => INITREG_T)
 			port map(
-				write_data_port,
-				write_enabled_flags(i),
-				init,
-				write_enabled,
-				read_enabled_flags(i),
-				read_data_1
+				write_data_port, 			-- data_input
+				write_enabled_flags(i),     -- enabled
+				init, 						-- init
+				write_enabled, 				-- clk
+				read_enabled_flags(i), 		-- output_enabled
+				read_data_1 				-- data_output
 			);
-		REGij :	REGn generic map(INITIAL => INITREG_T)
+		REG :	REGn generic map(INITIAL => INITREG_T)
 			port map(
 				write_data_port,
 				write_enabled_flags(i),

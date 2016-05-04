@@ -12,66 +12,60 @@ use commands.all;
 --
 entity Controller is
 	port(
-		clk                           : in  std_logic;
-		rst                           : in  std_logic;
-		start                         : in  std_logic;
-		stop                          : out std_logic;
+		clk                           : in    std_logic;
+		rst                           : in    std_logic;
+		start                         : in    std_logic;
+		stop                          : out   std_logic;
 
-		rom_enabled                   : out std_logic;
-		rom_address                   : out std_logic_vector(5 downto 0);
-		rom_data_output               : in  std_logic_vector(27 downto 0);
+		rom_enabled                   : out   std_logic;
+		rom_address                   : out   std_logic_vector(7 downto 0);
+		rom_data_output               : in    std_logic_vector(27 downto 0);
 
-		ram_init                      : out std_logic;
-		ram_write_enabled             : out std_logic;
-		ram_write_data_port           : out std_logic_vector(7 downto 0);
-		ram_write_address             : out std_logic_vector(7 downto 0);
-		ram_read_data_port_1          : in  std_logic_vector(7 downto 0);
-		ram_read_data_port_2          : in  std_logic_vector(7 downto 0);
+		ram_read_write                : out   std_logic;
+		ram_write_data_port           : out   std_logic_vector(7 downto 0);
+		ram_write_address             : out   std_logic_vector(7 downto 0);
+		ram_read_data_port_1          : in    std_logic_vector(7 downto 0);
+		ram_read_data_port_2          : in    std_logic_vector(7 downto 0);
 		ram_read_address_1            : out std_logic_vector(7 downto 0);
 		ram_read_address_2            : out std_logic_vector(7 downto 0);
 
-		datapath_enabled              : out std_logic;
-		datapath_operation_code       : out std_logic_vector(3 downto 0);
-		datapath_operand_1            : out std_logic_vector(7 downto 0);
-		datapath_operand_2            : out std_logic_vector(7 downto 0);
-		datapath_result               : in  std_logic_vector(7 downto 0);
-		datapath_zero_flag            : in  std_logic;
-		datapath_significant_bit_flag : in  std_logic
+		datapath_enabled              : out   std_logic;
+		datapath_operation_code       : out   std_logic_vector(3 downto 0);
+		datapath_operand_1            : out   std_logic_vector(7 downto 0);
+		datapath_operand_2            : out   std_logic_vector(7 downto 0);
+		datapath_result               : in    std_logic_vector(7 downto 0);
+		datapath_zero_flag            : in    std_logic;
+		datapath_significant_bit_flag : in    std_logic
 	);
 end entity Controller;
 
 architecture Controller_Behavioural of Controller is
 	type states is (
 		IDLE,
-		INIT,
 		FETCH,
 		DECODE,
 		READ,
 		WRITE,
 		ADD,
 		SUB,
-		MOV,
 		HALT,
 		JUMP_IF_ZERO,
 		JUMP_IF_NOT_SIGN_BIT_SET
 	);
 
-	signal next_state    : states;
-	signal current_state : states;
-
+	signal next_state          : states;
+	signal current_state       : states;
 	signal instruction         : std_logic_vector(27 downto 0);
-	signal instruction_counter : std_logic_vector(5 downto 0);
+	signal instruction_counter : std_logic_vector(7 downto 0);
+	signal operation           : std_logic_vector(3 downto 0);
+	signal operand_address_1   : std_logic_vector(7 downto 0);
+	signal operand_address_2   : std_logic_vector(7 downto 0);
+	signal result_address      : std_logic_vector(7 downto 0);
+	signal data_1              : std_logic_vector(7 downto 0);
+	signal data_2              : std_logic_vector(7 downto 0);
+	signal data_w              : std_logic_vector(7 downto 0);
 
-	signal operation         : std_logic_vector(3 downto 0);
-	signal operand_address_1 : std_logic_vector(7 downto 0);
-	signal operand_address_2 : std_logic_vector(7 downto 0);
-	signal result_address    : std_logic_vector(7 downto 0);
-
-	signal data_1 : std_logic_vector(7 downto 0);
-	signal data_2 : std_logic_vector(7 downto 0);
-	signal data_w : std_logic_vector(7 downto 0);
-
-	constant DEFAULT_COUNTER_VALUE     : std_logic_vector(5 downto 0)  := (instruction_counter'range => '0');
+	constant DEFAULT_COUNTER_VALUE     : std_logic_vector(7 downto 0)  := (instruction_counter'range => '0');
 	constant DEFAULT_INSTRUCTION_VALUE : std_logic_vector(27 downto 0) := (instruction'range => '0');
 	constant DEFAULT_OPERATION_VALUE   : std_logic_vector(3 downto 0)  := (operation'range => '0');
 	constant DEFAULT_ADDRESS_VALUE     : std_logic_vector(7 downto 0)  := (operand_address_1'range => '0');
@@ -91,11 +85,10 @@ begin
 		case current_state is
 			when IDLE =>
 				if (start = '1') then
-					next_state <= INIT;
+					next_state <= FETCH;
 				else
 					next_state <= IDLE;
-				end if;
-			when INIT  => next_state <= FETCH;
+				end if;	   
 			when FETCH => next_state <= DECODE;
 
 			when DECODE =>
@@ -105,8 +98,6 @@ begin
 					next_state <= JUMP_IF_ZERO;
 				elsif (operation = JNSB_OP) then
 					next_state <= JUMP_IF_NOT_SIGN_BIT_SET;
-				elsif (operation = MOV_OP) then
-					next_state <= MOV;
 				else
 					next_state <= READ;
 				end if;
@@ -118,7 +109,7 @@ begin
 				else
 					next_state <= IDLE;
 				end if;
-			when ADD | SUB | MOV =>
+			when ADD | SUB =>
 				next_state <= WRITE;
 			when WRITE | JUMP_IF_ZERO | JUMP_IF_NOT_SIGN_BIT_SET =>
 				next_state <= FETCH;
@@ -138,18 +129,6 @@ begin
 			stop <= '1';
 		else
 			stop <= '0';
-		end if;
-	end process;
-
-	--
-	-- multiplexer to initialize Reg file.
-	--
-	RAM_INITIAL : process(current_state)
-	begin
-		if (current_state = INIT) then
-			ram_init <= '1';
-		else
-			ram_init <= '0';
 		end if;
 	end process;
 
@@ -224,9 +203,9 @@ begin
 	RAM_MODE_SET : process(current_state)
 	begin
 		if (current_state = WRITE) then
-			ram_write_enabled <= '1';
+			ram_read_write <= '0';
 		else
-			ram_write_enabled <= '0';
+			ram_read_write <= '1';
 		end if;
 	end process;
 
@@ -235,20 +214,17 @@ begin
 		if (current_state = READ) then
 			data_1 <= ram_read_data_port_1;
 			data_2 <= ram_read_data_port_2;
-		elsif (current_state = MOV) then
-			data_1 <= ram_read_address_1;
-			data_2 <= ram_read_address_2;
 		end if;
 	end process;
 
 	ram_write_data_port     <= datapath_result;
 	datapath_operand_1      <= data_1;
-	datapath_operand_2      <= data_1;
+	datapath_operand_2      <= data_2;
 	datapath_operation_code <= operation;
 
 	DATAPATH_SET : process(current_state)
 	begin
-		if (current_state = ADD or current_state = SUB or current_state = MOV) then
+		if (current_state = ADD or current_state = SUB) then
 			datapath_enabled <= '1';
 		else
 			datapath_enabled <= '0';

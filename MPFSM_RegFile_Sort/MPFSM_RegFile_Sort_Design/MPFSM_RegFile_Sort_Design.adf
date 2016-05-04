@@ -5,7 +5,7 @@ version=3
 Current Config=compile
 
 [Configurations]
-compile=MPFSM_RegFile_Sort_Design
+compile=mpfsm_regfile_sort_design
 
 [Library]
 MPFSM_RegFile_Sort_Design=.\MPFSM_RegFile_Sort_Design.LIB
@@ -59,23 +59,29 @@ TestBench=1
 
 [Files]
 /Reg.vhd=-1
-/RegFile.vhd=-1
-/ROM.vhd=-1
+/MRAM.vhd=-1
+/Commands.vhd=-1
 /Datapath.vhd=-1
 /Controller.vhd=-1
-/Commands.vhd=-1
+/RegFile.vhd=-1
+/ROM.vhd=-1
 /MicroProcessor.vhd=-1
 TestBench/microprocessor_TB.vhd=-1
 TestBench/microprocessor_TB_runtest.do=-1
+TestBench/regfile_TB.vhd=-1
+TestBench/regfile_TB_runtest.do=-1
 
 [Files.Data]
 .\src\Reg.vhd=VHDL Source Code
-.\src\RegFile.vhd=VHDL Source Code
-.\src\ROM.vhd=VHDL Source Code
+.\src\MRAM.vhd=VHDL Source Code
+.\src\Commands.vhd=VHDL Source Code
 .\src\Datapath.vhd=VHDL Source Code
 .\src\Controller.vhd=VHDL Source Code
-.\src\Commands.vhd=VHDL Source Code
+.\src\RegFile.vhd=VHDL Source Code
+.\src\ROM.vhd=VHDL Source Code
 .\src\MicroProcessor.vhd=VHDL Source Code
 .\src\TestBench\microprocessor_TB.vhd=VHDL Test Bench
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
+.\src\TestBench\regfile_TB.vhd=VHDL Test Bench
+.\src\TestBench\regfile_TB_runtest.do=Macro
 

@@ -1,8 +1,10 @@
 .\src\Reg.vhd
-.\src\RegFile.vhd
-.\src\ROM.vhd
+.\src\MRAM.vhd
+.\src\Commands.vhd
 .\src\Datapath.vhd
 .\src\Controller.vhd
-.\src\Commands.vhd
+.\src\RegFile.vhd
+.\src\ROM.vhd
 .\src\MicroProcessor.vhd
 .\src\TestBench\microprocessor_TB.vhd
+.\src\TestBench\regfile_TB.vhd

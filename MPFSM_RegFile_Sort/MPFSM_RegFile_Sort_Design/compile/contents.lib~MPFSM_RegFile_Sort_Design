@@ -1,3 +1,20 @@
-433
-~E 1 "./src/ROM.vhd" 8 MicroROM
-~A 1 "./src/ROM.vhd" 16 MicroROM_Behaviour
+3099
+~E 1 "./src/Controller.vhd" 13 Controller
+~A 1 "./src/Controller.vhd" 42 Controller_Behavioural
+~E 1 "./src/Datapath.vhd" 10 Datapath
+~A 1 "./src/Datapath.vhd" 22 Datapath_Behavioural
+~E 1 "./src/MicroProcessor.vhd" 8 MicroProcessor
+~A 1 "./src/MicroProcessor.vhd" 19 MicroProcessor_Behavioural
+~E 1 "./src/TestBench/microprocessor_TB.vhd" 7 microprocessor_tb
+~A 1 "./src/TestBench/microprocessor_TB.vhd" 10 TB_ARCHITECTURE
+~E 1 "./src/ROM.vhd" 10 MicroROM
+~A 1 "./src/ROM.vhd" 18 MicroROM_Behaviour
+~E 1 "./src/MRAM.vhd" 5 MRAM
+~A 1 "./src/MRAM.vhd" 25 Beh_GPR
+~E 1 "./src/RegFile.vhd" 5 REGFile
+~A 1 "./src/RegFile.vhd" 19 beh_regfile
+~E 1 "./src/TestBench/regfile_TB.vhd" 7 regfile_tb
+~A 1 "./src/TestBench/regfile_TB.vhd" 14 TB_ARCHITECTURE
+~E 1 "./src/Reg.vhd" 4 REGn
+~A 1 "./src/Reg.vhd" 16 beh_regn
+~C 1 "./src/TestBench/regfile_TB.vhd" 86 testbench_for_regfile
