@@ -1,13 +1,3 @@
-391
-~E 1 "./src/Controller.vhd" 13 Controller
-~A 1 "./src/Controller.vhd" 43 Controller_Behavioural
-~E 1 "./src/Datapath.vhd" 8 Datapath
-~A 1 "./src/Datapath.vhd" 20 Datapath_Behavioural
-~E 1 "./src/MicroProcessor.vhd" 8 MicroProcessor
-~A 1 "./src/MicroProcessor.vhd" 19 MicroProcessor_Behavioural
+433
 ~E 1 "./src/ROM.vhd" 8 MicroROM
 ~A 1 "./src/ROM.vhd" 16 MicroROM_Behaviour
-~E 1 "./src/RegFile.vhd" 5 REGFile
-~A 1 "./src/RegFile.vhd" 19 beh_regfile
-~E 1 "./src/Reg.vhd" 4 REGn
-~A 1 "./src/Reg.vhd" 16 beh_regn

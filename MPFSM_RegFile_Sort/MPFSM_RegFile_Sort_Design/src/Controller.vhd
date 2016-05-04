@@ -19,16 +19,16 @@ entity Controller is
 
 		rom_enabled                   : out std_logic;
 		rom_address                   : out std_logic_vector(5 downto 0);
-		rom_data_output               : in  std_logic_vector(21 downto 0);
+		rom_data_output               : in  std_logic_vector(27 downto 0);
 
 		ram_init                      : out std_logic;
 		ram_write_enabled             : out std_logic;
 		ram_write_data_port           : out std_logic_vector(7 downto 0);
-		ram_write_address             : out std_logic_vector(5 downto 0);
+		ram_write_address             : out std_logic_vector(7 downto 0);
 		ram_read_data_port_1          : in  std_logic_vector(7 downto 0);
 		ram_read_data_port_2          : in  std_logic_vector(7 downto 0);
-		ram_read_address_1            : out std_logic_vector(5 downto 0);
-		ram_read_address_2            : out std_logic_vector(5 downto 0);
+		ram_read_address_1            : out std_logic_vector(7 downto 0);
+		ram_read_address_2            : out std_logic_vector(7 downto 0);
 
 		datapath_enabled              : out std_logic;
 		datapath_operation_code       : out std_logic_vector(3 downto 0);
@@ -50,6 +50,7 @@ architecture Controller_Behavioural of Controller is
 		WRITE,
 		ADD,
 		SUB,
+		MOV,
 		HALT,
 		JUMP_IF_ZERO,
 		JUMP_IF_NOT_SIGN_BIT_SET
@@ -58,22 +59,22 @@ architecture Controller_Behavioural of Controller is
 	signal next_state    : states;
 	signal current_state : states;
 
-	signal instruction         : std_logic_vector(21 downto 0);
+	signal instruction         : std_logic_vector(27 downto 0);
 	signal instruction_counter : std_logic_vector(5 downto 0);
 
 	signal operation         : std_logic_vector(3 downto 0);
-	signal operand_address_1 : std_logic_vector(5 downto 0);
-	signal operand_address_2 : std_logic_vector(5 downto 0);
-	signal result_address    : std_logic_vector(5 downto 0);
+	signal operand_address_1 : std_logic_vector(7 downto 0);
+	signal operand_address_2 : std_logic_vector(7 downto 0);
+	signal result_address    : std_logic_vector(7 downto 0);
 
 	signal data_1 : std_logic_vector(7 downto 0);
 	signal data_2 : std_logic_vector(7 downto 0);
 	signal data_w : std_logic_vector(7 downto 0);
 
 	constant DEFAULT_COUNTER_VALUE     : std_logic_vector(5 downto 0)  := (instruction_counter'range => '0');
-	constant DEFAULT_INSTRUCTION_VALUE : std_logic_vector(21 downto 0) := (instruction'range => '0');
+	constant DEFAULT_INSTRUCTION_VALUE : std_logic_vector(27 downto 0) := (instruction'range => '0');
 	constant DEFAULT_OPERATION_VALUE   : std_logic_vector(3 downto 0)  := (operation'range => '0');
-	constant DEFAULT_ADDRESS_VALUE     : std_logic_vector(5 downto 0)  := (operand_address_1'range => '0');
+	constant DEFAULT_ADDRESS_VALUE     : std_logic_vector(7 downto 0)  := (operand_address_1'range => '0');
 
 begin
 	FSM : process(clk, rst, next_state)
@@ -104,6 +105,8 @@ begin
 					next_state <= JUMP_IF_ZERO;
 				elsif (operation = JNSB_OP) then
 					next_state <= JUMP_IF_NOT_SIGN_BIT_SET;
+				elsif (operation = MOV_OP) then
+					next_state <= MOV;
 				else
 					next_state <= READ;
 				end if;
@@ -115,7 +118,7 @@ begin
 				else
 					next_state <= IDLE;
 				end if;
-			when ADD | SUB =>
+			when ADD | SUB | MOV =>
 				next_state <= WRITE;
 			when WRITE | JUMP_IF_ZERO | JUMP_IF_NOT_SIGN_BIT_SET =>
 				next_state <= FETCH;
@@ -137,7 +140,7 @@ begin
 			stop <= '0';
 		end if;
 	end process;
-	
+
 	--
 	-- multiplexer to initialize Reg file.
 	--
@@ -202,10 +205,10 @@ begin
 			operand_address_1 <= DEFAULT_ADDRESS_VALUE;
 			operand_address_2 <= DEFAULT_ADDRESS_VALUE;
 		elsif (next_state = DECODE) then
-			operation         <= instruction(21 downto 18);
-			operand_address_1 <= instruction(17 downto 12);
-			operand_address_2 <= instruction(11 downto 6);
-			result_address    <= instruction(5 downto 0);
+			operation         <= instruction(27 downto 24);
+			operand_address_1 <= instruction(23 downto 16);
+			operand_address_2 <= instruction(15 downto 8);
+			result_address    <= instruction(7 downto 0);
 		end if;
 	end process;
 
@@ -232,6 +235,9 @@ begin
 		if (current_state = READ) then
 			data_1 <= ram_read_data_port_1;
 			data_2 <= ram_read_data_port_2;
+		elsif (current_state = MOV) then
+			data_1 <= ram_read_address_1;
+			data_2 <= ram_read_address_2;
 		end if;
 	end process;
 
@@ -242,7 +248,7 @@ begin
 
 	DATAPATH_SET : process(current_state)
 	begin
-		if (current_state = ADD or current_state = SUB) then
+		if (current_state = ADD or current_state = SUB or current_state = MOV) then
 			datapath_enabled <= '1';
 		else
 			datapath_enabled <= '0';

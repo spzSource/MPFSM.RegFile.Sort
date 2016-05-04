@@ -50,9 +50,12 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=controller|Controller_Behavioural|0 datapath|Datapath_Behavioural|0 regn|beh_regn|0 
+HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+
+[Groups]
+TestBench=1
 
 [Files]
 /Reg.vhd=-1
@@ -62,6 +65,8 @@ Selected=
 /Controller.vhd=-1
 /Commands.vhd=-1
 /MicroProcessor.vhd=-1
+TestBench/microprocessor_TB.vhd=-1
+TestBench/microprocessor_TB_runtest.do=-1
 
 [Files.Data]
 .\src\Reg.vhd=VHDL Source Code
@@ -71,3 +76,6 @@ Selected=
 .\src\Controller.vhd=VHDL Source Code
 .\src\Commands.vhd=VHDL Source Code
 .\src\MicroProcessor.vhd=VHDL Source Code
+.\src\TestBench\microprocessor_TB.vhd=VHDL Test Bench
+.\src\TestBench\microprocessor_TB_runtest.do=Macro
+

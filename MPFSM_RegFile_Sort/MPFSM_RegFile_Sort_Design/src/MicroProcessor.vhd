@@ -7,7 +7,7 @@ use ieee.std_logic_unsigned.all;
 
 entity MicroProcessor is
 	generic(INITREG_T          : std_logic_vector := "00000000";
-		    ADDRESS_BIT_SIZE_T : integer          := 6);
+		    ADDRESS_BIT_SIZE_T : integer          := 8);
 	port(
 		clk   : in  std_logic;
 		rst   : in  std_logic;
@@ -21,7 +21,7 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 		port(
 			read_enable : in  std_logic;
 			address     : in  std_logic_vector(5 downto 0);
-			data_output : out std_logic_vector(21 downto 0)
+			data_output : out std_logic_vector(27 downto 0)
 		);
 	end component;
 
@@ -60,16 +60,16 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 
 			rom_enabled                   : out std_logic;
 			rom_address                   : out std_logic_vector(5 downto 0);
-			rom_data_output               : in  std_logic_vector(21 downto 0);
+			rom_data_output               : in  std_logic_vector(27 downto 0);
 
 			ram_init                      : out std_logic;
 			ram_write_enabled             : out std_logic;
 			ram_write_data_port           : out std_logic_vector(7 downto 0);
-			ram_write_address             : out std_logic_vector(5 downto 0);
+			ram_write_address             : out std_logic_vector(7 downto 0);
 			ram_read_data_port_1          : in  std_logic_vector(7 downto 0);
 			ram_read_data_port_2          : in  std_logic_vector(7 downto 0);
-			ram_read_address_1            : out std_logic_vector(5 downto 0);
-			ram_read_address_2            : out std_logic_vector(5 downto 0);
+			ram_read_address_1            : out std_logic_vector(7 downto 0);
+			ram_read_address_2            : out std_logic_vector(7 downto 0);
 
 			datapath_enabled              : out std_logic;
 			datapath_operation_code       : out std_logic_vector(3 downto 0);
@@ -92,7 +92,7 @@ architecture MicroProcessor_Behavioural of MicroProcessor is
 
 	signal mp_rom_read_enable : std_logic;
 	signal mp_rom_address     : std_logic_vector(5 downto 0);
-	signal mp_rom_data_output : std_logic_vector(21 downto 0);
+	signal mp_rom_data_output : std_logic_vector(27 downto 0);
 
 	signal mp_datapath_enabled              : std_logic;
 	signal mp_datapath_operation_code       : std_logic_vector(3 downto 0);

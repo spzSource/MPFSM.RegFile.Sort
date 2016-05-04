@@ -7,7 +7,12 @@ use ieee.std_logic_unsigned.all;
 
 package commands is
 	subtype op_code is std_logic_vector(3 downto 0);
-										   
+					
+	-- op code        | 8 data bits     | 8 bit completion | destination addr |
+	-- --------------- ----------------- ------------------ ------------------
+	-- {4 bit}        | {8 bit}         | { 00000000 }     |  {addr}          |
+	constant MOV_OP    : op_code := "0000";	
+					   
 	constant ADD_OP    : op_code := "0010";
 	constant SUB_OP    : op_code := "0011";
 	constant HALT_OP   : op_code := "0100";

@@ -5,3 +5,4 @@
 .\src\Controller.vhd
 .\src\Commands.vhd
 .\src\MicroProcessor.vhd
+.\src\TestBench\microprocessor_TB.vhd

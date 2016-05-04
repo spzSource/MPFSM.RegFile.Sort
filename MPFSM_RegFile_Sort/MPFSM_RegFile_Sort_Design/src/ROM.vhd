@@ -5,29 +5,31 @@ use ieee.numeric_std.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
+use commands.all;
+
 entity MicroROM is
 	port(
 		read_enable : in  std_logic;
 		address     : in  std_logic_vector(5 downto 0);
-		data_output : out std_logic_vector(21 downto 0)
+		data_output : out std_logic_vector(27 downto 0)
 	);
 end MicroROM;
 
 architecture MicroROM_Behaviour of MicroROM is
-	subtype ram_address is std_logic_vector(5 downto 0);
+	subtype ram_address is std_logic_vector(7 downto 0);
 	subtype op_code is std_logic_vector(3 downto 0);
 
 	--
 	-- type and sub-types declarations
 	-- 
-	-- { op_code (4 bit) | first_arg_addr (6 bit) | second_arg_addr (6 bit) | result_addr (6 bit) }
-	subtype instruction is std_logic_vector(21 downto 0);
+	subtype instruction is std_logic_vector(27 downto 0);
 	type ROM_type is array (0 to 63) of instruction;
 
 	--
 	-- Represents the set of instructions as read only (constant) memory.
 	--
 	constant ROM : ROM_type := (
+		MOV_OP & "00000011" & "00000000" & "00000001",
 		others => (instruction'range => '0')
 	);
 

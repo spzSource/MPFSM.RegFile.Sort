@@ -1,0 +1,123 @@
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/Commands.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# Error: COMP96_0078: ROM.vhd : (32, 3): Unknown identifier "MOV_OP".
+# Error: COMP96_0133: ROM.vhd : (32, 3): Cannot find object declaration.
+# Error: COMP96_0079: ROM.vhd : (31, 29): Invalid aggregate.
+# Error: COMP96_0077: ROM.vhd : (31, 29): Undefined type of expression. Expected type 'ROM_type'.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# Error: COMP96_0078: Datapath.vhd : (47, 10): Unknown identifier "ADD_OP".
+# Error: COMP96_0078: Datapath.vhd : (48, 10): Unknown identifier "SUB_OP".
+# Error: COMP96_0078: Datapath.vhd : (49, 10): Unknown identifier "MOV_OP".
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Error: COMP96_0233: Fatal error : INTERNAL COMPILER ERROR (compiled file "y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd" - parsing process)
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Commands.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/ROM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Error: COMP96_0235: Fatal error : INTERNAL COMPILER ERROR (compiled file "y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd" - elaboration or code generation process)
+# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Datapath.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# Error: COMP96_0078: Datapath.vhd : (47, 10): Unknown identifier "ADD_OP".
+# Error: COMP96_0078: Datapath.vhd : (48, 10): Unknown identifier "SUB_OP".
+# Error: COMP96_0078: Datapath.vhd : (49, 10): Unknown identifier "MOV_OP".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Datapath.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# Error: COMP96_0078: Datapath.vhd : (47, 10): Unknown identifier "ADD_OP".
+# Error: COMP96_0078: Datapath.vhd : (48, 10): Unknown identifier "SUB_OP".
+# Error: COMP96_0078: Datapath.vhd : (49, 10): Unknown identifier "MOV_OP".
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/MicroProcessor.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# Error: COMP96_0056: MicroProcessor.vhd : (106, 17): Cannot find referenced entity declaration "REGFile".
+# Error: COMP96_0055: MicroProcessor.vhd : (106, 17): Cannot find referenced context element.
+# Error: COMP96_0055: MicroProcessor.vhd : (117, 17): Cannot find referenced context element.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/RegFile.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# Warning: ELAB1_0026: RegFile.vhd : (60, 0): There is no default binding for component "REGn". (No entity named "REGn" was found).
+# Compile success 0 Errors 1 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Reg.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/Commands.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# Error: COMP96_0078: ROM.vhd : (32, 3): Unknown identifier "MOV_OP".
+# Error: COMP96_0133: ROM.vhd : (32, 3): Cannot find object declaration.
+# Error: COMP96_0079: ROM.vhd : (31, 29): Invalid aggregate.
+# Error: COMP96_0077: ROM.vhd : (31, 29): Undefined type of expression. Expected type 'ROM_type'.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# Error: COMP96_0078: Datapath.vhd : (47, 10): Unknown identifier "ADD_OP".
+# Error: COMP96_0078: Datapath.vhd : (48, 10): Unknown identifier "SUB_OP".
+# Error: COMP96_0078: Datapath.vhd : (49, 10): Unknown identifier "MOV_OP".
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Error: COMP96_0233: Fatal error : INTERNAL COMPILER ERROR (compiled file "y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd" - parsing process)
+# Compile failure 8 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Commands.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Controller.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Error: COMP96_0235: Fatal error : INTERNAL COMPILER ERROR (compiled file "y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd" - elaboration or code generation process)
+# Compile failure 1 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -work MPFSM_RegFile_Sort_Design -2002  $dsn/src/Controller.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Error: COMP96_0235: Fatal error : INTERNAL COMPILER ERROR (compiled file "y:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd" - elaboration or code generation process)
+# Compile failure 1 Errors 0 Warnings  Analysis time :  63.0 [ms]

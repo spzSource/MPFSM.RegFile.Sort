@@ -5,6 +5,8 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
+use commands.all;
+
 entity Datapath is
 	port(
 		enabled              : in  std_logic;
@@ -24,12 +26,6 @@ architecture Datapath_Behavioural of Datapath is
 	signal result_zero_flag            : std_logic;
 	signal result_significant_bit_flag : std_logic;
 
-	--
-	-- operation codes
-	--
-	constant ADD : std_logic_vector(3 downto 0) := "0010";
-	constant MUL : std_logic_vector(3 downto 0) := "0011";
-
 begin
 	--
 	-- represents 8-bit adder
@@ -48,8 +44,9 @@ begin
 	begin
 		if (rising_edge(enabled)) then
 			case operation_code is
-				when ADD    => op_result <= add_result;
-				when MUL    => op_result <= sub_result;
+				when ADD_OP    => op_result <= add_result;
+				when SUB_OP    => op_result <= sub_result;
+				when MOV_OP    => op_result <= operand_1;
 				when others => null;
 			end case;
 		end if;
