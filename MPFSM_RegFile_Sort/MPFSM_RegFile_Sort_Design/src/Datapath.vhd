@@ -23,6 +23,7 @@ architecture Datapath_Behavioural of Datapath is
 	signal op_result                   : std_logic_vector(7 downto 0);
 	signal add_result                  : std_logic_vector(7 downto 0);
 	signal sub_result                  : std_logic_vector(7 downto 0);
+	signal mov_result                  : std_logic_vector(7 downto 0);
 	signal result_zero_flag            : std_logic;
 	signal result_significant_bit_flag : std_logic;
 
@@ -37,6 +38,7 @@ begin
 	--
 	sub_result <= CONV_STD_LOGIC_VECTOR(CONV_INTEGER(operand_1) - CONV_INTEGER(operand_2), 8);
 
+	mov_result <= operand_1;
 	--
 	-- synchronous register-accumulator
 	--
@@ -44,8 +46,9 @@ begin
 	begin
 		if (rising_edge(enabled)) then
 			case operation_code is
-				when ADD_OP    => op_result <= add_result;
-				when SUB_OP    => op_result <= sub_result;
+				when ADD_OP => op_result <= add_result;
+				when SUB_OP => op_result <= sub_result;
+				when MOV_FROM_IND | MOV_TO_IND => op_result <= mov_result;
 				when others => null;
 			end case;
 		end if;

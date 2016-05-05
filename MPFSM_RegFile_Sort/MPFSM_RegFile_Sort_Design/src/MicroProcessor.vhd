@@ -6,8 +6,6 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 entity MicroProcessor is
-	generic(INITREG_T          : std_logic_vector := "00000000";
-		    ADDRESS_BIT_SIZE_T : integer          := 8);
 	port(
 		clk   : in  std_logic;
 		rst   : in  std_logic;

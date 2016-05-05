@@ -29,8 +29,9 @@ architecture MicroROM_Behaviour of MicroROM is
 	-- Represents the set of instructions as read only (constant) memory.
 	--
 	constant ROM : ROM_type := (
-		ADD_OP & "00000000" & "00000001" & "11111111",
-		others => (instruction'range => '0')
+		MOV_TO_IND & "00000100" & "00000011" & "00000000",	
+		HALT_OP    & "00000000" & "00000000" & "00000000",
+		others => HALT_OP    & "00000000" & "00000000" & "00000000"
 	);
 
 	signal data : instruction;

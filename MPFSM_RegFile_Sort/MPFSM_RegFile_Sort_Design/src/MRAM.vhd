@@ -17,7 +17,7 @@ end MRAM;
 
 architecture Beh_GPR of MRAM is
 	subtype byte is std_logic_vector(7 downto 0);
-	type RAM_t is array (0 to 64) of byte;
+	type RAM_t is array (0 to 255) of byte;
 
 	--
 	-- Initial state for memory
@@ -26,7 +26,7 @@ architecture Beh_GPR of MRAM is
 		"00000101",                     -- 5	a[0]  
 		"00000011",                     -- 3	a[1]
 		"00000001",                     -- 1	a[2]
-		"00000110",                     -- 6	a[3]
+		"00000100",                     -- 4	a[3]
 
 		"00000000",                     -- 0	a[4]  [-]
 		"00000011",                     -- 3    a[5]  outer loop: max index value

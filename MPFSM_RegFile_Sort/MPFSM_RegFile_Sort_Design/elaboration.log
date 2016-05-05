@@ -1,4 +1,4 @@
-Active-HDL 9.1.2353.4205  2016-05-05 22:20:47
+Active-HDL 9.1.2353.4205  2016-05-06 00:53:54
 
 Elaboration top modules:
 Architecture                  TB_ARCHITECTURE(microprocessor_tb)
@@ -34,3 +34,7 @@ ieee                                           | Standard IEEE packages library
 mpfsm_regfile_sort_design                      | None
 std                                            | Standard VHDL library
 -----------------------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
+
