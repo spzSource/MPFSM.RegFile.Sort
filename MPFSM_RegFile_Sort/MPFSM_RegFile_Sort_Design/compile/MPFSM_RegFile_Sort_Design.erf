@@ -29,4 +29,4 @@ MESSAGE "File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegF
 MESSAGE "Compile Entity "regfile_tb"" 
 MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"" 
 MESSAGE "Compile Configuration "TESTBENCH_FOR_regfile"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]" 

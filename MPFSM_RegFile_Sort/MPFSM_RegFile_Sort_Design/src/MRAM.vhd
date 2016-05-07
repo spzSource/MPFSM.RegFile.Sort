@@ -40,6 +40,7 @@ architecture Beh_GPR of MRAM is
 
 		"00000000",                     -- 0    a[11] reserved cell (temp 1)
 		"00000000",                     -- 0   	a[12] reserved cell (temp 2) 
+		"00000000",						-- 0    a[13] reserved cell (temp 3)
 
 		others => "00000000"
 	);

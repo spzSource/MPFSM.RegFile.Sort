@@ -1,7 +1,7 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.1 [s].
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
+# Compile with File Reorder...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
 # File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
 # Compile Entity "REGn"
@@ -33,112 +33,11 @@ acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.v
 # Compile Entity "regfile_tb"
 # Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
 # Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# Error: COMP96_0071: Controller.vhd : (120, 24): Operator "=" is not defined for such operands.
-# Error: COMP96_0077: Controller.vhd : (120, 11): Undefined type of expression. Expected type 'BOOLEAN'.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile failure 2 Errors 0 Warnings  Analysis time :  0.9 [s]
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# Error: COMP96_0015: ROM.vhd : (34, 3): '=>' expected.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Top-level unit(s) detected:
+# Entity => microprocessor_tb
+# Configuration => TESTBENCH_FOR_regfile
+# Entity => regfile_tb
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
 acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
 # Compile...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
@@ -174,125 +73,6 @@ acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.v
 # Compile Configuration "TESTBENCH_FOR_regfile"
 # Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.1 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6208 kB (elbread=1023 elab2=5091 kernel=92 sdf=0)
-# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  00:36, Friday, May 6, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/clk}
-# add wave -noreg {/microprocessor_tb/rst}
-# add wave -noreg {/microprocessor_tb/start}
-# add wave -noreg {/microprocessor_tb/stop}
-# 4 signal(s) traced.
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/next_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/current_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction_counter}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operation}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/result_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_w}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rst}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/start}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/stop}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_data_output}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_data_port}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operation_code}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_result}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_zero_flag}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_significant_bit_flag}
-# 32 signal(s) traced.
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__62.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__42.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
-# RUNTIME: Fatal Error: RUNTIME_0047 MRAM.vhd (57): Index 255 out of range (0 to 64).
-# KERNEL: Time: 65 ns,  Iteration: 1,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: WRITE.
-# KERNEL: stopped at delta: 1 at time 65 ns.
-# Error: Fatal error occurred during simulation.
-endsim
-#  Simulation has been stopped
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
-# ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # ELBREAD: Elaboration process.
@@ -311,51 +91,20 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6211 kB (elbread=1023 elab2=5094 kernel=92 sdf=0)
+# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=92 sdf=0)
 # KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  00:37, Friday, May 6, 2016
+#  21:06, Saturday, May 7, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/next_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/current_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction_counter}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operation}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/result_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_w}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rst}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/start}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/stop}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_data_output}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_data_port}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operation_code}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_result}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_zero_flag}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_significant_bit_flag}
-# 32 signal(s) traced.
+# 86 signal(s) traced.
+# wave -rec *
 run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__62.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__42.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__64.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__78.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
@@ -375,121 +124,6 @@ run 100 ns
 # KERNEL: stopped at time: 400 ns
 run 100 ns
 # KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/RAM}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_win}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_1out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_2out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_data_port}
-# 12 signal(s) traced.
-endsim
-#  Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6211 kB (elbread=1023 elab2=5094 kernel=92 sdf=0)
-# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  00:39, Friday, May 6, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/next_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/current_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction_counter}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operation}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/result_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_w}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rst}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/start}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/stop}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_data_output}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_data_port}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operation_code}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_result}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_zero_flag}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_significant_bit_flag}
-# 32 signal(s) traced.
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__62.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__42.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/RAM}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_win}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_1out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_2out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_data_port}
-# 12 signal(s) traced.
 run 100 ns
 # KERNEL: stopped at time: 600 ns
 run 100 ns
@@ -506,8 +140,41 @@ run 100 ns
 # KERNEL: stopped at time: 1200 ns
 run 100 ns
 # KERNEL: stopped at time: 1300 ns
-endsim
-#  Simulation has been stopped
+acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
+# Compile Entity "MRAM"
+# Compile Architecture "Beh_GPR" of Entity "MRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# Error: COMP96_0015: ROM.vhd : (72, 3): '=>' expected.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
+# Compile Entity "regfile_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
+# Compile Configuration "TESTBENCH_FOR_regfile"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.4 [s]
 acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
 # Compile...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
@@ -541,143 +208,8 @@ acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.v
 # Compile Entity "regfile_tb"
 # Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
 # Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6211 kB (elbread=1023 elab2=5094 kernel=92 sdf=0)
-# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  00:42, Friday, May 6, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/next_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/current_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction_counter}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operation}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/result_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_w}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rst}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/start}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/stop}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_data_output}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_data_port}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operation_code}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_result}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_zero_flag}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_significant_bit_flag}
-# 32 signal(s) traced.
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/RAM}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_win}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_1out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_2out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_data_port}
-# 12 signal(s) traced.
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__62.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__42.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-endsim
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
 #  Simulation has been stopped
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
@@ -697,64 +229,20 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6211 kB (elbread=1023 elab2=5094 kernel=92 sdf=0)
+# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=92 sdf=0)
 # KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  00:46, Friday, May 6, 2016
+#  21:22, Saturday, May 7, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/next_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/current_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction_counter}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operation}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/result_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_w}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rst}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/start}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/stop}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_data_output}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_data_port}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operation_code}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_result}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_zero_flag}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_significant_bit_flag}
-# 32 signal(s) traced.
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/RAM}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_win}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_1out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_2out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_data_port}
-# 12 signal(s) traced.
+# 86 signal(s) traced.
+# wave -rec *
 run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__62.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__42.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__64.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__80.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
@@ -784,6 +272,86 @@ run 100 ns
 # KERNEL: stopped at time: 900 ns
 run 100 ns
 # KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+run 100 ns
+# KERNEL: stopped at time: 2600 ns
+run 100 ns
+# KERNEL: stopped at time: 2700 ns
+run 100 ns
+# KERNEL: stopped at time: 2800 ns
+run 100 ns
+# KERNEL: stopped at time: 2900 ns
+run 100 ns
+# KERNEL: stopped at time: 3 us
+run 100 ns
+# KERNEL: stopped at time: 3100 ns
+run 100 ns
+# KERNEL: stopped at time: 3200 ns
+run 100 ns
+# KERNEL: stopped at time: 3300 ns
+run 100 ns
+# KERNEL: stopped at time: 3400 ns
+run 100 ns
+# KERNEL: stopped at time: 3500 ns
+run 100 ns
+# KERNEL: stopped at time: 3600 ns
+run 100 ns
+# KERNEL: stopped at time: 3700 ns
+run 100 ns
+# KERNEL: stopped at time: 3800 ns
+run 100 ns
+# KERNEL: stopped at time: 3900 ns
+run 100 ns
+# KERNEL: stopped at time: 4 us
+run 100 ns
+# KERNEL: stopped at time: 4100 ns
+run 100 ns
+# KERNEL: stopped at time: 4200 ns
+run 100 ns
+# KERNEL: stopped at time: 4300 ns
+run 100 ns
+# KERNEL: stopped at time: 4400 ns
+run 100 ns
+# KERNEL: stopped at time: 4500 ns
+run 100 ns
+# KERNEL: stopped at time: 4600 ns
+run 100 ns
+# KERNEL: stopped at time: 4700 ns
+run 100 ns
+# KERNEL: stopped at time: 4800 ns
+run 100 ns
+# KERNEL: stopped at time: 4900 ns
+run 100 ns
+# KERNEL: stopped at time: 5 us
 endsim
 #  Simulation has been stopped
 acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
@@ -819,7 +387,7 @@ acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.v
 # Compile Entity "regfile_tb"
 # Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
 # Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
@@ -839,51 +407,20 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # SLP: Finished : 0.0 [s]
 # ELAB2: Elaboration final pass complete - time: 0.1 [s].
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6212 kB (elbread=1023 elab2=5095 kernel=92 sdf=0)
+# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=92 sdf=0)
 # KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  00:49, Friday, May 6, 2016
+#  21:26, Saturday, May 7, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/next_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/current_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction_counter}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operation}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/result_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_w}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rst}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/start}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/stop}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_data_output}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_data_port}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operation_code}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_result}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_zero_flag}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_significant_bit_flag}
-# 32 signal(s) traced.
+# 86 signal(s) traced.
+# wave -rec *
 run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__62.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__43.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__64.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__80.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
 # KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
@@ -899,131 +436,91 @@ run 100 ns
 # KERNEL: stopped at time: 200 ns
 run 100 ns
 # KERNEL: stopped at time: 300 ns
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
-#  Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6211 kB (elbread=1023 elab2=5095 kernel=92 sdf=0)
-# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  00:53, Friday, May 6, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/next_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/current_state}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/instruction_counter}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operation}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/operand_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/result_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/data_w}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rst}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/start}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/stop}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/rom_data_output}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_data_port}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/ram_read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_enabled}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operation_code}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_operand_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_result}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_zero_flag}
-# add wave -noreg {/microprocessor_tb/UUT/U_CONTROLLER/datapath_significant_bit_flag}
-# 32 signal(s) traced.
 run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__62.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__42.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
-# KERNEL: stopped at time: 100 ns
+# KERNEL: stopped at time: 400 ns
 run 100 ns
-# KERNEL: stopped at time: 200 ns
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/RAM}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_win}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_1out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/data_2out}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_write}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/clk}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_address_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_address}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_1}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/read_data_port_2}
-# add wave -noreg {/microprocessor_tb/UUT/U_RAM/write_data_port}
-# 12 signal(s) traced.
+# KERNEL: stopped at time: 500 ns
 run 100 ns
-# KERNEL: stopped at time: 300 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+run 100 ns
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+run 100 ns
+# KERNEL: stopped at time: 2400 ns
+run 100 ns
+# KERNEL: stopped at time: 2500 ns
+run 100 ns
+# KERNEL: stopped at time: 2600 ns
+run 100 ns
+# KERNEL: stopped at time: 2700 ns
+run 100 ns
+# KERNEL: stopped at time: 2800 ns
+run 100 ns
+# KERNEL: stopped at time: 2900 ns
+run 100 ns
+# KERNEL: stopped at time: 3 us
+run 100 ns
+# KERNEL: stopped at time: 3100 ns
+run 100 ns
+# KERNEL: stopped at time: 3200 ns
+run 100 ns
+# KERNEL: stopped at time: 3300 ns
+run 100 ns
+# KERNEL: stopped at time: 3400 ns
+run 100 ns
+# KERNEL: stopped at time: 3500 ns
+run 100 ns
+# KERNEL: stopped at time: 3600 ns
+run 100 ns
+# KERNEL: stopped at time: 3700 ns
+run 100 ns
+# KERNEL: stopped at time: 3800 ns
+run 100 ns
+# KERNEL: stopped at time: 3900 ns
+run 100 ns
+# KERNEL: stopped at time: 4 us
+run 100 ns
+# KERNEL: stopped at time: 4100 ns
+run 100 ns
+# KERNEL: stopped at time: 4200 ns
+run 100 ns
+# KERNEL: stopped at time: 4300 ns
+run 100 ns
+# KERNEL: stopped at time: 4400 ns
+run 100 ns
+# KERNEL: stopped at time: 4500 ns
+run 100 ns
+# KERNEL: stopped at time: 4600 ns
+endsim
 #  Simulation has been stopped

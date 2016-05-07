@@ -42,13 +42,13 @@ begin
 	--
 	-- synchronous register-accumulator
 	--
-	ALU_REG : process(enabled, operation_code, operand_1, operand_2, add_result, sub_result)
+	ALU_REG : process(enabled, operation_code, operand_1, operand_2, add_result, sub_result, mov_result)
 	begin
 		if (rising_edge(enabled)) then
 			case operation_code is
 				when ADD_OP => op_result <= add_result;
 				when SUB_OP => op_result <= sub_result;
-				when MOV_FROM_IND | MOV_TO_IND => op_result <= mov_result;
+				when COPYINTO_OP | COPYTOIN_OP => op_result <= mov_result;
 				when others => null;
 			end case;
 		end if;

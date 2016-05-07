@@ -50,7 +50,7 @@ UCF=
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=microprocessor_tb|TB_ARCHITECTURE|0 
+HierarchyInformation=microprocessor_tb|TB_ARCHITECTURE|0 regfile_tb|testbench_for_regfile|1 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -84,4 +84,3 @@ TestBench/regfile_TB_runtest.do=-1
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
 .\src\TestBench\regfile_TB.vhd=VHDL Test Bench
 .\src\TestBench\regfile_TB_runtest.do=Macro
-
