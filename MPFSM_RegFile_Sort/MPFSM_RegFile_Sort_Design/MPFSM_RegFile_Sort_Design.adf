@@ -84,3 +84,4 @@ TestBench/regfile_TB_runtest.do=-1
 .\src\TestBench\microprocessor_TB_runtest.do=Macro
 .\src\TestBench\regfile_TB.vhd=VHDL Test Bench
 .\src\TestBench\regfile_TB_runtest.do=Macro
+

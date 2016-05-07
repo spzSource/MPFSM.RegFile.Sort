@@ -51,11 +51,11 @@ architecture Controller_Behavioural of Controller is
 		HALT,
 		JUMP_IF_ZERO,
 		JUMP_IF_NOT_SIGN_BIT_SET,
-		CPYIT,
-		CPYITR,
-		M,
-		CPYTI,
-		CPYTIR
+		LOAD_FROM_INDEX_TO,
+		LOAD_FROM_INDEX_TO_READ_ADDR,
+		LOAD_ACCEPT_WRITE,
+		LOAD_TO_INDEX_FROM,
+		LOAD_TO_INDEX_FROM_READ_ADDR
 	);
 
 	signal next_state          : states;
@@ -111,20 +111,20 @@ begin
 					next_state <= ADD;
 				elsif (operation = SUB_OP) then
 					next_state <= SUB;
-				elsif (operation = COPYINTO_OP) then
-					next_state <= CPYIT;
-				elsif (operation = COPYTOIN_OP) then
-					next_state <= CPYTI;
+				elsif (operation = LOAD_FROM_INEDEX_TO_ADDR_OP) then
+					next_state <= LOAD_FROM_INDEX_TO;
+				elsif (operation = LOAD_FROM_ADDR_TO_INDEX_OP) then
+					next_state <= LOAD_TO_INDEX_FROM;
 				else
 					next_state <= IDLE;
 				end if;
-			when CPYIT =>
-				next_state <= CPYITR;
-			when CPYTI =>
-				next_state <= CPYTIR;
-			when CPYITR | CPYTIR =>
-				next_state <= M;
-			when ADD | SUB | M =>
+			when LOAD_FROM_INDEX_TO =>
+				next_state <= LOAD_FROM_INDEX_TO_READ_ADDR;
+			when LOAD_TO_INDEX_FROM =>
+				next_state <= LOAD_TO_INDEX_FROM_READ_ADDR;
+			when LOAD_FROM_INDEX_TO_READ_ADDR | LOAD_TO_INDEX_FROM_READ_ADDR =>
+				next_state <= LOAD_ACCEPT_WRITE;
+			when ADD | SUB | LOAD_ACCEPT_WRITE =>
 				next_state <= WRITE;
 			when WRITE | JUMP_IF_ZERO | JUMP_IF_NOT_SIGN_BIT_SET =>
 				next_state <= FETCH;
@@ -204,11 +204,11 @@ begin
 			operand_address_1 <= instruction(23 downto 16);
 			operand_address_2 <= instruction(15 downto 8);
 			result_address    <= instruction(7 downto 0);
-		elsif (next_state = CPYIT) then
+		elsif (next_state = LOAD_FROM_INDEX_TO) then
 			operand_address_1 <= data_1;
-		elsif (next_state = CPYTI) then
+		elsif (next_state = LOAD_TO_INDEX_FROM) then
 			operand_address_2 <= data_2;
-		elsif (next_state = CPYTIR) then
+		elsif (next_state = LOAD_TO_INDEX_FROM_READ_ADDR) then
 			result_address <= operand_address_2;
 		end if;
 	end process;
@@ -236,7 +236,7 @@ begin
 		if (current_state = READ) then
 			data_1 <= ram_read_data_port_1;
 			data_2 <= ram_read_data_port_2;
-		elsif (current_state = CPYITR) then
+		elsif (current_state = LOAD_FROM_INDEX_TO_READ_ADDR) then
 			data_1 <= ram_read_data_port_1;
 		end if;
 	end process;
@@ -248,7 +248,7 @@ begin
 
 	DATAPATH_SET : process(current_state)
 	begin
-		if (current_state = ADD or current_state = SUB or current_state = M) then
+		if (current_state = ADD or current_state = SUB or current_state = LOAD_ACCEPT_WRITE) then
 			datapath_enabled <= '1';
 		else
 			datapath_enabled <= '0';

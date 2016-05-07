@@ -1,5 +1,40 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
+# Compile Entity "REGn"
+# Compile Architecture "beh_regn" of Entity "REGn"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
+# Compile Entity "MRAM"
+# Compile Architecture "Beh_GPR" of Entity "MRAM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
+# Compile Package "commands"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
+# Compile Entity "Datapath"
+# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
+# Compile Entity "Controller"
+# Compile Architecture "Controller_Behavioural" of Entity "Controller"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
+# Compile Entity "REGFile"
+# Compile Architecture "beh_regfile" of Entity "REGFile"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
+# Compile Entity "MicroROM"
+# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
+# Compile Entity "MicroProcessor"
+# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
+# Compile Entity "microprocessor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
+# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
+# Compile Entity "regfile_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
+# Compile Configuration "TESTBENCH_FOR_regfile"
+# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
+# Library Manager: Library "mpfsm_regfile_sort_design" contents cleared.
 acom -reorder -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
 # Compile with File Reorder...
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
@@ -37,41 +72,9 @@ acom -reorder -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/s
 # Entity => microprocessor_tb
 # Configuration => TESTBENCH_FOR_regfile
 # Entity => regfile_tb
-# Compile success 0 Errors 0 Warnings  Analysis time :  1.0 [s]
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.3 [s]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
@@ -93,145 +96,7 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=92 sdf=0)
 # KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  21:06, Saturday, May 7, 2016
-#  Simulation has been initialized
-#  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
-# 86 signal(s) traced.
-# wave -rec *
-run 100 ns
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__63.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_RAM,  Process: line__64.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_ROM,  Process: line__78.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__34.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: line__39.
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /microprocessor_tb/UUT/U_DATAPATH,  Process: FLAGS_PROCESS.
-# KERNEL: stopped at time: 100 ns
-run 100 ns
-# KERNEL: stopped at time: 200 ns
-run 100 ns
-# KERNEL: stopped at time: 300 ns
-run 100 ns
-# KERNEL: stopped at time: 400 ns
-run 100 ns
-# KERNEL: stopped at time: 500 ns
-run 100 ns
-# KERNEL: stopped at time: 600 ns
-run 100 ns
-# KERNEL: stopped at time: 700 ns
-run 100 ns
-# KERNEL: stopped at time: 800 ns
-run 100 ns
-# KERNEL: stopped at time: 900 ns
-run 100 ns
-# KERNEL: stopped at time: 1 us
-run 100 ns
-# KERNEL: stopped at time: 1100 ns
-run 100 ns
-# KERNEL: stopped at time: 1200 ns
-run 100 ns
-# KERNEL: stopped at time: 1300 ns
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# Error: COMP96_0015: ROM.vhd : (72, 3): '=>' expected.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile failure 1 Errors 0 Warnings  Analysis time :  0.4 [s]
-acom -O3 -work mpfsm_regfile_sort_design -2002  $dsn/src/Reg.vhd $dsn/src/MRAM.vhd $dsn/src/Commands.vhd $dsn/src/Datapath.vhd $dsn/src/Controller.vhd $dsn/src/RegFile.vhd $dsn/src/ROM.vhd $dsn/src/MicroProcessor.vhd $dsn/src/TestBench/microprocessor_TB.vhd $dsn/src/TestBench/regfile_TB.vhd
-# Compile...
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Reg.vhd
-# Compile Entity "REGn"
-# Compile Architecture "beh_regn" of Entity "REGn"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MRAM.vhd
-# Compile Entity "MRAM"
-# Compile Architecture "Beh_GPR" of Entity "MRAM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Commands.vhd
-# Compile Package "commands"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Datapath.vhd
-# Compile Entity "Datapath"
-# Compile Architecture "Datapath_Behavioural" of Entity "Datapath"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\Controller.vhd
-# Compile Entity "Controller"
-# Compile Architecture "Controller_Behavioural" of Entity "Controller"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\RegFile.vhd
-# Compile Entity "REGFile"
-# Compile Architecture "beh_regfile" of Entity "REGFile"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\ROM.vhd
-# Compile Entity "MicroROM"
-# Compile Architecture "MicroROM_Behaviour" of Entity "MicroROM"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\MicroProcessor.vhd
-# Compile Entity "MicroProcessor"
-# Compile Architecture "MicroProcessor_Behavioural" of Entity "MicroProcessor"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\microprocessor_TB.vhd
-# Compile Entity "microprocessor_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "microprocessor_tb"
-# File: f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\TestBench\regfile_TB.vhd
-# Compile Entity "regfile_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "regfile_tb"
-# Compile Configuration "TESTBENCH_FOR_regfile"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
-#  Simulation has been stopped
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# asim: Stack memory: 32MB
-# asim: Retval memory: 32MB
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# ELAB2: Create instances complete.
-# SLP: Started
-# SLP: Elaboration phase ...
-# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
-# SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=92 sdf=0)
-# KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  21:22, Saturday, May 7, 2016
+#  22:01, Saturday, May 7, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
 # 86 signal(s) traced.
@@ -263,9 +128,11 @@ run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 500 ns
 run 100 ns
+run 100 ns
 # KERNEL: stopped at time: 600 ns
 run 100 ns
 # KERNEL: stopped at time: 700 ns
+run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 800 ns
 run 100 ns
@@ -286,6 +153,7 @@ run 100 ns
 # KERNEL: stopped at time: 1600 ns
 run 100 ns
 # KERNEL: stopped at time: 1700 ns
+run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 1800 ns
 run 100 ns
@@ -314,6 +182,7 @@ run 100 ns
 # KERNEL: stopped at time: 3 us
 run 100 ns
 # KERNEL: stopped at time: 3100 ns
+run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 3200 ns
 run 100 ns
@@ -405,11 +274,11 @@ asim -O5 +access +r +m+microprocessor_tb microprocessor_tb TB_ARCHITECTURE
 # SLP: Elaboration phase ...
 # SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
 # SLP: Finished : 0.0 [s]
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 6214 kB (elbread=1023 elab2=5097 kernel=92 sdf=0)
 # KERNEL: ASDB file was created in location f:\Dropbox\Magistracy\POCP\practice\MPFSM_regfile_sort\MPFSM_RegFile_Sort\MPFSM_RegFile_Sort_Design\src\wave.asdb
-#  21:26, Saturday, May 7, 2016
+#  22:07, Saturday, May 7, 2016
 #  Simulation has been initialized
 #  Selected Top-Level: microprocessor_tb (TB_ARCHITECTURE)
 # 86 signal(s) traced.
@@ -455,27 +324,33 @@ run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 1200 ns
 run 100 ns
+run 100 ns
 # KERNEL: stopped at time: 1300 ns
 run 100 ns
 # KERNEL: stopped at time: 1400 ns
+run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 1500 ns
 run 100 ns
 # KERNEL: stopped at time: 1600 ns
 run 100 ns
+run 100 ns
 # KERNEL: stopped at time: 1700 ns
 run 100 ns
 # KERNEL: stopped at time: 1800 ns
 run 100 ns
+run 100 ns
 # KERNEL: stopped at time: 1900 ns
 run 100 ns
 # KERNEL: stopped at time: 2 us
+run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 2100 ns
 run 100 ns
 # KERNEL: stopped at time: 2200 ns
 run 100 ns
 # KERNEL: stopped at time: 2300 ns
+run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 2400 ns
 run 100 ns
@@ -513,7 +388,9 @@ run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 4100 ns
 run 100 ns
+run 100 ns
 # KERNEL: stopped at time: 4200 ns
+run 100 ns
 run 100 ns
 # KERNEL: stopped at time: 4300 ns
 run 100 ns
@@ -522,5 +399,8 @@ run 100 ns
 # KERNEL: stopped at time: 4500 ns
 run 100 ns
 # KERNEL: stopped at time: 4600 ns
-endsim
+run 100 ns
+# KERNEL: stopped at time: 4700 ns
+run 100 ns
+# KERNEL: stopped at time: 4800 ns
 #  Simulation has been stopped

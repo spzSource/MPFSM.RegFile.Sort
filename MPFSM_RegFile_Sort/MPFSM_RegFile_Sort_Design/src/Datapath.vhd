@@ -48,7 +48,7 @@ begin
 			case operation_code is
 				when ADD_OP => op_result <= add_result;
 				when SUB_OP => op_result <= sub_result;
-				when COPYINTO_OP | COPYTOIN_OP => op_result <= mov_result;
+				when LOAD_FROM_INEDEX_TO_ADDR_OP | LOAD_FROM_ADDR_TO_INDEX_OP => op_result <= mov_result;
 				when others => null;
 			end case;
 		end if;
